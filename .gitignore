@@ -1,0 +1,6 @@
+# abaikan ini saat push
+*.vs
+bin/
+obj/
+modul4_103022300082.csproj
+modul4_10302300082.sln
