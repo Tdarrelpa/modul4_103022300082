@@ -1,5 +1,5 @@
 # abaikan ini saat push
-*.vs
+*.vs/
 bin/
 obj/
 modul4_103022300082.csproj

@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-/*
 public class Program
 {
     public static void Main(string[] args)
@@ -12,21 +11,20 @@ public class Program
 
     public static string getKodeProduk(string namaProduk)
     {
-        string[] prduk_elektronik = { "Laptop", "Smartphone", "Tablet", "Headset", "Keyboard", "Mouse", "Printer", "Monitor", "Smartwatch", "Kamera"};
+        string[] produk_elektronik = { "Laptop", "Smartphone", "Tablet", "Headset", "Keyboard", "Mouse", "Printer", "Monitor", "Smartwatch", "Kamera"};
         string[] kode_produk = { "E100", "E101", "E102", "E103", "E104", "E105", "E106", "E107", "E108", "E109"};
 
-        for (int i = 0; i < prduk_elektronik.Length; i++)
+        for (int i = 0; i < produk_elektronik.Length; i++)
         {
-            if (prduk_elektronik[i] == namaProduk)
+            if (produk_elektronik[i] == namaProduk)
             {
                 return kode_produk[i];
             }
         }
 
-        return "Produk tidak ditemukan";
+        return "E000: Produk yang anda cari tidak ada, silahkan coba lagi!";
     }
 }
-*/
 
 public class FanLaptop 
 {
@@ -54,7 +52,7 @@ public class FanLaptop
         }
         else if (fanState == state.TURBO)
         {
-            fanState = state.TURBO;
+            Console.WriteLine("Mode kipas sudah paling cepat, silahkan coba lagi!");
         }
         else
         {
@@ -79,7 +77,7 @@ public class FanLaptop
         }
         else if (fanState == state.QUIET)
         {
-            fanState = state.QUIET;
+            Console.WriteLine("Mode kipas sudah paling lambat, silahkan coba lagi!");
         }
         else
         {
